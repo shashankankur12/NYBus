@@ -18,10 +18,16 @@ apply plugin: 'java'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'junit:junit:4.12'
+    implementation 'junit:junit:4.13.2'
     implementation 'org.mockito:mockito-core:2.7.1'
     implementation project(':nybus-common')
 }
 
 sourceCompatibility = "1.7"
 targetCompatibility = "1.7"
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
