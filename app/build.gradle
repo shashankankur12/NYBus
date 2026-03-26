@@ -17,12 +17,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    namespace "sample.mindorks.com.nybus"
+    compileSdk 36
+    buildToolsVersion '36.0.0'
     defaultConfig {
         applicationId "sample.mindorks.com.nybus"
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 36
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
